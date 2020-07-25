@@ -41,6 +41,7 @@
     "webpack-merge": "^5.0.9"
   },
   "dependencies": {
-    "core-js": "^3.6.5"
+    "core-js": "^3.6.5",
+    "express": "^4.17.1"
   }
 }

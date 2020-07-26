@@ -1,0 +1,6 @@
+@use 'package' as *;
+
+* {
+  @include center(column);
+  color: $color-black;
+}

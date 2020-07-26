@@ -1,6 +1,3 @@
-import 'core-js/modules/es.array.flat'
-import './index.scss'
+import Main from 'components/Main'
 
-const test2 = () => {
-  console.log('test3')
-}
+import 'styles/base.scss'

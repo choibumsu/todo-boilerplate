@@ -17,8 +17,16 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: 'file-loader',
+        test: /\.(png|jpe?g|gif|svg|ico)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              name: 'images/[name].[ext]?[hash]',
+              limit: 10000,
+            },
+          },
+        ],
       },
       {
         test: /\.scss$/,
